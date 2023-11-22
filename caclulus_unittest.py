@@ -1,4 +1,4 @@
-import calculus
+from calculus import *
 import unittest
 import numpy as np
 class RootFindingTest(unittest.TestCase):

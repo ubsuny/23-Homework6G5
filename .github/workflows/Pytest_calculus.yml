@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Pytest
         run: |
-             pytest unittest.py
+             pytest caclulus_unittest.py
         
       - name: Upload Pytest log as artifact
         uses: actions/upload-artifact@v2

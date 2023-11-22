@@ -1,6 +1,6 @@
 pytest
 pylint
 numpy
+scipy
+pandas
 matplotlib
-unittest
-
