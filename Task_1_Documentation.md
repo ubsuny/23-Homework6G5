@@ -176,5 +176,96 @@ N = 256.0,  Integral = 45.65514251840915
 N = 512.0,  Integral = 45.6552280711973
 Adaptive trapezoidal rule result for exp(-1/x): 45.6552280711973
 ```
+The plot of the exponential function is obtained as:
+![Plot of exp(-1/x)](https://github.com/poojashresthacode/23-Homework6G5/blob/Documentation/expoplot.png)
 
+## Calculating Accuracy and Steps:
+``` python
+def calculate_accuracy(true_value, computed_value):
+    """
+    Calculates the accuracy in terms of correct digits.
+    """
+    true_str = "{:.10f}".format(true_value)
+    computed_str = "{:.10f}".format(computed_value)
+
+    num_correct_digits = sum(a == b for a, b in zip(true_str, computed_str))
+    return num_correct_digits
+```
+The function uses the "{:.10f}" format specifier to convert the true_value and computed_value into strings with 10 decimal places.The zip function is used to pair corresponding characters in true_str and computed_str. It then compares each pair to check if the digits are equal.The function returns the count of correct digits.
+
+```python
+def compare_integration_methods(true_value, method_results):
+    """
+    Compares the accuracies and efficiencies of integration methods.
+    """
+    print("Integration Method\tAccuracy (Correct Digits)\tEfficiency (Number of Steps)")
+    print("-" * 70)
+
+    for method, (result, steps) in method_results.items():
+        accuracy = calculate_accuracy(true_value, result)
+        print(f"{method}\t\t\t{accuracy}\t\t\t\t{steps}")
+```
+The function starts by printing a header for the comparison table, indicating the columns for the integration method, accuracy (in terms of correct digits), and efficiency (number of steps). This establishes a clear structure for the output. The function then iterates over the items in the method_results dictionary, which is expected to contain information about the integration results for various methods. Here, method is the name of the integration method, and (result, steps) is a tuple containing the computed result and the number of steps taken by the method.For each integration method, the function calculates the accuracy using the calculate_accuracy function. This provides the number of correct digits in the computed result compared to the true value. The function then prints a formatted line for each integration method, including the method name, accuracy, and efficiency.
+
+```python
+# Define the true integral value (we need to set this based on your expectations)
+true_integral_value = 45.6552294298  # Update this with the actual true value
+```
+True value is provided.
+```python
+method_results = {
+    "Trapezoidal Rule": (44.767875582331264, 10),
+    "Simpson's Rule": (45.394860137465905, 10),
+    "Adaptive Trapezoidal Rule": (45.6552280711973, 512)
+}
+```
+The method_results dictionary contains the results of numerical integration for three different methods applied to a specific function within a given interval. Each method is associated with a tuple, where the first element is the computed result of the integral, and the second element is the number of steps or iterations taken by the method to reach that result.
+```python
+compare_integration_methods(true_integral_value, method_results)
+```
+The compare_integration_methods function is designed to compare the accuracy and efficiency of different numerical integration methods. It takes as input the true integral value (a known or expected value) and a dictionary of results from various integration methods. 
+The accuracy and efficiency is listed as below:
+``` python
+Integration Method	Accuracy (Correct Digits)	Efficiency (Number of Steps)
+----------------------------------------------------------------------
+Trapezoidal Rule			2				10
+Simpson's Rule			3				10
+Adaptive Trapezoidal Rule			8				512
+```
+## Using the Three Integral Methods in Cosine Function Cos(1/x):
+For this function, we followed the same step as in exponential function. The results are obtained as below:
+``` python
+Trapezoidal rule result for cos(1/x): 15.128082019278253
+Simpson's rule result for cos(1/x): 15.077326591974334
+N = 2,  Integral = 14.69553699486812
+N = 2.0,  Integral = 15.13817411175341
+N = 4.0,  Integral = 15.28229266873223
+N = 8.0,  Integral = 15.202338910677666
+N = 16.0,  Integral = 14.885908897345049
+N = 32.0,  Integral = 14.368298703127117
+N = 64.0,  Integral = 14.225510442707169
+N = 128.0,  Integral = 14.139288959761373
+N = 256.0,  Integral = 14.12643665624567
+N = 512.0,  Integral = 14.169098779968605
+N = 1024.0,  Integral = 14.150337041374877
+N = 2048.0,  Integral = 14.176954635176106
+N = 4096.0,  Integral = 14.17167798219445
+N = 8192.0,  Integral = 14.167004776519086
+N = 16384.0,  Integral = 14.170172686932725
+N = 32768.0,  Integral = 14.167615786301804
+N = 65536.0,  Integral = 14.169510790916057
+N = 131072.0,  Integral = 14.169930771221303
+N = 262144.0,  Integral = 14.169128304018258
+N = 524288.0,  Integral = 14.169121853224096
+Adaptive trapezoidal rule result for cos(-1/x): 14.169121853224096
+```
+
+
+```python
+Integration Method	Accuracy (Correct Digits)	Efficiency (Number of Steps)
+----------------------------------------------------------------------
+Trapezoidal Rule			3				10
+Simpson's Rule			3				10
+Adaptive Trapezoidal Rule			13				524288
+```
 
