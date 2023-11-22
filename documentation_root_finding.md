@@ -40,7 +40,7 @@ Steps taken for tan(x) root using root_bisection: 23
  the number of steps for root_simple is  36 
  the number of steps for the root_bisection is 23
 ```
-![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11)
+![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11) [Wikipedia](https://en.wikipedia.org/wiki/Hyperbolic_functions)
 
 ## steps of the code
  The code first imports the necessary libraries, including the calculus module, matplotlib.pyplot, and re.
