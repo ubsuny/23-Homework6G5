@@ -1,4 +1,6 @@
 pytest
+pylint
 numpy
 matplotlib
-sys
+flake8
+unittest
