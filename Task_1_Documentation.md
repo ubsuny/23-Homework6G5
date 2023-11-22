@@ -290,8 +290,10 @@ Adaptive Trapezoidal Rule			19				2
 Hence, Task 1 is finalized.
 
 ## Bibliography
-https://github.com/ubsuny/CompPhys
-https://math24.net/simpsons-rule.html
-https://en.wikipedia.org/wiki/Trapezoidal_rule
-https://xilinx.github.io/Vitis_Libraries/quantitative_finance/2020.1/guide_L1/NumericalIntegration/NumericalIntegration.html#:~:text=The%20Adaptive%20Trapezoidal%20rule%20takes,where%20they%20are%20absolutely%20required.
+1. https://github.com/ubsuny/CompPhys
+2. https://math24.net/simpsons-rule.html
+3. https://en.wikipedia.org/wiki/Trapezoidal_rule
+4.https://xilinx.github.io/Vitis_Libraries/quantitative_finance/2020.1/guide_L1/NumericalIntegration/NumericalIntegration.html#:~:text=The%20Adaptive%20Trapezoidal%20rule%20takes,where%20they%20are%20absolutely%20required.
+
+
 
