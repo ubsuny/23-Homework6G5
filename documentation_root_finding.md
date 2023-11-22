@@ -11,8 +11,9 @@ All four of the algorithms are implemented in Python and can be used to find the
 Tan(x):
 A struggle with tan(x) function is to aviod being stuck at a minima. From the illustration below the code may give the root of tan(x) at x= $\pi/2$
 we tried to avoid this by creating x0 and x1 as ${\pi/2 + 0.0001}$ and ${3\pi/2 -0.0001}$
-fig.(1) Roots of Tan(x)
-![Uploading Tangent_701.svg…]()
+fig.(1) Roots of Tan(x) [Wolframe](https://mathworld.wolfram.com/Tangent.html)
+<img width="308" alt="Screen Shot 2023-11-22 at 2 51 33 PM" src="https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/1c91b130-3b53-4295-81c6-fdaeac00a724"> 
+
 
 
 Tanh(x)
