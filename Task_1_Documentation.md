@@ -232,7 +232,7 @@ Trapezoidal Rule			2				10
 Simpson's Rule			3				10
 Adaptive Trapezoidal Rule			8				512
 ```
-## Using the Three Integral Methods in Cosine Function Cos(1/x):
+## Using the Three Integral Methods in Cosine Function Cos(1/x) with boundary ]0, 5*pi].
 
 For this function, we followed the same step as in exponential function. The results are obtained as below:
 ``` python
@@ -270,7 +270,7 @@ Simpson's Rule			3				10
 Adaptive Trapezoidal Rule			13				524288
 ```
 
-## Using the Three Integral Methods in Cubic Function x^3+1/5:
+## Using the Three Integral Methods in Cubic Function x^3+1/5 using boundary [-1,1]
 ``` python
 Trapezoidal rule result for x^3 + 1/5: 0.4
 Simpson's rule result for x^3 + 1/5: 0.4000000000000001
@@ -278,6 +278,8 @@ N = 2,  Integral = 0.3999999999999999
 N = 2.0,  Integral = 0.39999999999999997
 Adaptive trapezoidal rule result for x^3 + 1/5: 0.39999999999999997
 ```
+![Plot for Cubic Function](https://github.com/poojashresthacode/23-Homework6G5/blob/Documentation/cubic%20plot.png)
+
 ```python
 Integration Method	Accuracy (Correct Digits)	Efficiency (Number of Steps)
 ----------------------------------------------------------------------
