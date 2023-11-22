@@ -11,11 +11,14 @@ All four of the algorithms are implemented in Python and can be used to find the
 Tan(x):
 A struggle with tan(x) function is to aviod being stuck at a minima. From the illustration below the code may give the root of tan(x) at x= $\pi/2$
 we tried to avoid this by creating x0 and x1 as ${\pi/2 + 0.0001}$ and ${3\pi/2 -0.0001}$
-![graphing_the_tangent_function_9](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/eb9e0ea3-932d-490d-801b-5b27a990175c)
+fig.(1) Roots of Tan(x)
+![Uploading Tangent_701.svg…]()
+
 
 Tanh(x)
-For Tanh(x), the only root it has is 0 but for the root_functions to iterate and reach the required accuracy
-![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11) [Wikipedia](https://en.wikipedia.org/wiki/Hyperbolic_functions)
+For Tanh(x), the only root it has is 0 but for the root_functions to iterate and reach the required accuracy we didn't start or make the initial guess as zero but -1 
+Fig.(2) Roots of Tanh(x) [Wikipedia](https://en.wikipedia.org/wiki/Hyperbolic_functions)
+![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11) 
 
 
 **The results we got**:
