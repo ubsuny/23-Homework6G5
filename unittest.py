@@ -1,7 +1,6 @@
 import calculus
 import unittest
 import numpy as np
-
 class RootFindingTest(unittest.TestCase):
 
     def test_root_print_header(self):
