@@ -15,10 +15,12 @@ we tried to avoid this by creating x0 and x1 as ${\pi/2 + 0.0001}$ and ${3\pi/2 
 
 Tanh(x)
 For Tanh(x), the only root it has is 0 but for the root_functions to iterate and reach the required accuracy
+![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11) [Wikipedia](https://en.wikipedia.org/wiki/Hyperbolic_functions)
 
 
 **The results we got**:
 
+![Unknown-9](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/600c1266-5ea8-47c6-b756-88fad73082c4)
 
 
 According to the functions we used for measuring the roots the values were 
@@ -33,15 +35,34 @@ Steps taken for tan(x) root using root_simple: 36
 Root of tan(x) using root_bisection: 3.1415930280944373
 Accuracy of tan(x) root using root_bisection: 3.1415930280944373
 Steps taken for tan(x) root using root_bisection: 23
-**Accuracy**
+Accuracy
   the accuracy of root_simple is  17 
  the accuracy of root_bisection is  17
-**Steps**
+Steps
  the number of steps for root_simple is  36 
  the number of steps for the root_bisection is 23
 ```
-![Tanh(x)](https://github.com/yasmensarhan27/23-Homework6G5/assets/38404107/24842bb0-1e0c-4131-b385-5669091baa11) [Wikipedia](https://en.wikipedia.org/wiki/Hyperbolic_functions)
 
+```
+----------------Results of tanh(x)----------------
+---------root_simple---------
+Root of tanh(x) using root_simple: -2.7755575615628914e-17
+Accuracy of tanh(x) root using root_simple: 2.7755575615628914e-17
+Steps taken for tanh(x) root using root_simple: 23
+---------root_bisection---------
+Root of tanh(x) using root_bisection: -4.76837158203125e-07
+Accuracy of tanh(x) root using root_bisection: 4.76837158203125e-07
+Steps taken for tanh(x) root using root_bisection: 21
+
+---------for tanh(x)---------- 
+  Accuracy 
+  the accuracy of root_simple is  17 
+ the accuracy of root_bisection is  15
+Steps 
+ the number of steps for root_simple is  23 
+ the number of steps for the root_bisection is 21
+
+```
 ## steps of the code
  The code first imports the necessary libraries, including the calculus module, matplotlib.pyplot, and re.
  
