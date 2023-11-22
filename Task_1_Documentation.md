@@ -287,4 +287,4 @@ Trapezoidal Rule			2				2
 Simpson's Rule			2				2
 Adaptive Trapezoidal Rule			19				2
 ```
-
+Hence, Task 1 is finalized.
